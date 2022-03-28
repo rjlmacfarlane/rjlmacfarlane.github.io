@@ -15,7 +15,7 @@
       "zip": "B2T 1E7"
     },
     "website": "http://rjlmacfarlane.github.io",
-    "resumedownload":"https://drive.google.com/file/d/1akq9BbzGwbZ-ZF03Khohzceo9A1Bg4hP/view",
+    "resumedownload":"https://drive.google.com/file/d/1uvSQiAJhLBrmAqm8W05MFn7Gh1OevNg5/view?usp=sharing",
     "social":[
       {
         "name":"linkedin",
@@ -49,18 +49,24 @@
         "description":"In addition to learning important frameworks like React.js, Ruby on Rails, PostgreSQL, and others, Lighthouse Labs helped me discover talents I didn't know I had, such as UI/UX design, project planning and management, and team building techniques."
       },
       {
-        "school":"Robertson College",
-        "degree":"Pharmaceutical Technology Diploma",
-        "graduated":"June 2006",
-        "description":"At Robertson college I learned about the importance of precision work, best practices for securing patient data and protecting confidentiality as well as business and medical ethics."
+        "school":"Vanderbilt University",
+        "degree":"Self-directed Android App Development Specialization",
+        "graduated":"In progress",
+        "description":""
+      },
+      {
+        "school":"Coursera Python",
+        "degree":"Self-directed Python learning",
+        "graduated":"In progress",
+        "description":"Part of the Google IT Automation with Python Professional Certificate Program"
       }
     ],
     "work":[
       {
-        "company":"Blue Sky Digital",
-        "title":"Entrepreneur extraordinaire",
-        "years":"March 2010 - Present",
-        "description":"Specializing in data recovery, virus removal, performance optimization, and thwarting ransomware attacks, Blue Sky Digital is a tech-support side hustle I've been running for over a decade, helping clients recover everything from lost passwords to wedding photos and critical documents."
+        "company":"Able Sense",
+        "title":"Junior Developer",
+        "years":"March 2020 - March 2021",
+        "description":"In remote communication with sales team and design leads, fulfil web development needs of online entrepreneurs, respond to and resolve ticketed technical support requests from clients, and author documentation and how-to guides."
       },
       {
         "company":"Steinway & Sons",
@@ -72,7 +78,7 @@
     "skills":[
       {
         "name":"JavaScript",
-        "level":"75%"
+        "level":"85%"
       },
       {
         "name":"React.js",
@@ -80,19 +86,27 @@
       },
       {
         "name":"Ruby on Rails",
-        "level":"60%"
+        "level":"50%"
       },
       {
         "name":"CSS",
-        "level":"80%"
+        "level":"90%"
       },
       {
         "name":"HTML5",
-        "level":"80%"
+        "level":"90%"
       },
       {
         "name":"PostgreSQL",
         "level":"70%"
+      },
+      {
+        "name":"Python",
+        "level":"50%"
+      },
+      {
+        "name":"Kotlin",
+        "level":"50%"
       },
       {
         "name":"TensorFlow",
@@ -103,30 +117,29 @@
   "portfolio":{
     "projects": [
       {
+        "title":"Skylark + Owl",
+        "category":"A Shopify site built in Liquid, utilizing HTML, CSS, and JS.",
+        "image":"skylark-owl.png",
+        "url":"https://skylark-owl.ca"
+      },
+      {
+        "title":"Grand Pre Wines",
+        "category":"A Shopify site built in Liquid, utilizing HTML, CSS, and JS.",
+        "image":"grand-pre.png",
+        "url":"https://github.com/rjlmacfarlane/jungle-rails"
+      },
+      {
         "title":"Reflexion",
         "category":"Machine learning puts the power of yoga in your hands. Built with React.",
         "image":"reflexion.jpg",
         "url":"https://github.com/Luke-Berzins/Reflexion"
       },
       {
-        "title":"Jungle",
-        "category":"An e-commerce site built with Ruby on Rails",
-        "image":"jungle.jpg",
-        "url":"https://github.com/rjlmacfarlane/jungle-rails"
-      },
-      {
         "title":"Interview Scheduler",
         "category":"React-based webapp for connecting mentors and students.",
         "image":"scheduler.jpg",
         "url":"https://github.com/rjlmacfarlane/scheduler"
-      },
-      {
-        "title":"Tweeter",
-        "category":"A Twitter clone using JQuery and Dry Humour.",
-        "image":"resume-website.jpg",
-        "url":"https://github.com/rjlmacfarlane/tweeter"
-      }
-   
+      }  
     ]
   },
   "testimonials":{
