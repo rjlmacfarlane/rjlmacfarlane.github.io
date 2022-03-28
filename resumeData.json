@@ -1,10 +1,10 @@
 {
   "main": {
     "name":"Ryan MacFarlane",
-    "occupation":"Junior Web Developer",
+    "occupation":"Developer",
     "description":"Lighthouse Labs graduate",
     "image":"profilepic.jpg",
-    "bio":"I am a junior web developer with an eye for UI/UX design, and experience in React.js, Ruby on Rails, Node.js, Express.js, PostgreSQL, SASS, and more.",
+    "bio":"I am a front-end & software developer with an eye for UI/UX design, and experience in React.js, Ruby on Rails, Node.js, Express.js, PostgreSQL, SASS, and more.",
     "contactmessage":"Interested in working together? Let's talk.",
     "email": "rjl.macfarlane@gmail.com",
     "phone": "902-809-5341",
@@ -82,11 +82,7 @@
       },
       {
         "name":"React.js",
-        "level":"55%"
-      },
-      {
-        "name":"Ruby on Rails",
-        "level":"50%"
+        "level":"65%"
       },
       {
         "name":"CSS",
@@ -106,6 +102,10 @@
       },
       {
         "name":"Kotlin",
+        "level":"50%"
+      },
+      {
+        "name":"Ruby on Rails",
         "level":"50%"
       },
       {
