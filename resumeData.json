@@ -47,19 +47,7 @@
         "degree":"Web Development Diploma",
         "graduated":"February 26, 2021",
         "description":"In addition to learning important frameworks like React.js, Ruby on Rails, PostgreSQL, and others, Lighthouse Labs helped me discover talents I didn't know I had, such as UI/UX design, project planning and management, and team building techniques."
-      },
-      {
-        "school":"Vanderbilt University",
-        "degree":"Self-directed Android App Development Specialization",
-        "graduated":"In progress",
-        "description":"Augmenting my skillset with continuing education in Android Application Development. Estimated completion date: May 5, 2022."
-      },
-      {
-        "school":"Coursera Python",
-        "degree":"Self-directed Python learning",
-        "graduated":"In progress",
-        "description":"Part of the Google IT Automation with Python Professional Certificate Program. Estimated completion date: May 5, 2022."
-      }
+      }      
     ],
     "work":[
       {
