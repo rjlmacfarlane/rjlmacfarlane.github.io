@@ -1,0 +1,223 @@
+<HTML>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
+    </head>
+    <style>
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 100px;
+        height: 50px;
+        background: rgb(7, 124, 3);
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+    
+    label:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        width: 45px;
+        height: 45px;
+        background: #fff;
+        border-radius: 45px;
+        transition: 0.3s;
+    }
+    
+    input:checked + label {
+        background: #9e1268;
+    }
+
+     
+    input:checked + label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+    label:active:after {
+        width: 65px;
+    }
+    
+    body {
+        font-family: 'Baloo Da 2', cursive;
+       
+        height: 100vh;
+    }
+    h1 {
+        margin-bottom: -10px;
+    }
+    .content {
+        width: 75%;
+    }
+    div {
+    width: 75%;
+    height: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.key-takeaways { 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.frame {
+   animation: fadeIn linear 1.5s;
+  -webkit-animation: fadeIn linear 1.5s;
+  -moz-animation: fadeIn linear 1.5s;
+  -o-animation: fadeIn linear 1.5s;
+  -ms-animation: fadeIn linear 1.5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+</style>
+<script type="text/javascript">
+    $(function () {
+        $("#advanced").hide();
+        $("#switch").click(function () {
+            if ($(this).is(":checked")) {
+                $("#advanced").show();
+                $("#beginner").hide();
+            } else {
+                $("#beginner").show();
+                $("#advanced").hide();
+            }
+        });
+    });
+</script>
+<center>
+    <h1>What is Bitcoin?</h1>
+    <table>
+        <tr>
+            <td style="padding-top: 25px; padding-right: 25px;"><h2>For Youth</h2></td>
+            <td><input type="checkbox" id="switch" /><label for="switch">Toggle</label></td>
+            <td style="padding-top: 25px; padding-left: 25px;"><h2>For Adults</h2></td>
+        </tr>   
+    </table>    
+</center> 
+    <div id="beginner" class="frame">
+
+    <p>What is Bitcoin? Simple! Bitcoin is money!</p>
+    <p>You probably already understand what money is, but let's start from the very beginning.</p> 
+    <p>Let's say it's a hot summer's day, and you would just love a delicious ice cream cone to help you cool off. So you hop on your bike and head down to the Corner Store to buy an ice cream cone. The clerk at the Corner Store says "One dollar, please!" and you present your bank card. Tap, swipe, beep beep, done! The Corner Store receives one dollar from your bank account, and you receive one ice cream cone. You have spent one dollar, and in exchange you've received one ice cream cone! Yum!</p>
+    <p>That was simple, right?</p>
+    <p>Well, let's find out.</p>
+    <p>Have you ever wondered, how does a Corner Store <strong>know for sure</strong> that your dollars are real, that you have dollars to spend, and that you are really spending them?</p>
+    <p>At the Corner Store, you know the ice cream cone is real. After all, you can see it, hold it, and soon you'll taste it, too! But the Corner Store can't see your dollar. They can't hold it either. The Corner Store saw you tap, swipe, and beep your bank card, but they never saw a real dollar move from your bank account to their bank account.</p>
+    <p>Yet, the store <strong>trusts</strong> the dollar is there. They <strong>trust</strong> it moved from your bank account to theirs. But why?</p>
+    <p>The answer is simple: they <strong>trust</strong> the bank.</p>
+    <p>The bank makes a <strong>promise</strong>: "We will make sure that dollars are real, and we will do the <strong>work</strong> of moving money from once place to another place. Trust us!"</p>
+    <p><strong>Trust. Work. Promises.</strong> They are what make money, money!</p>
+    <p><strong>But what if that trust was broken?</strong> What would happen then? How would anyone get any ice cream on hot days?</p>
+    <p>Banks are run by people, and people sometimes make mistakes. They sometimes do things they promise not to do. When a bank makes a mistake, or when it breaks a promise, something as simple as buying some ice cream can get very complicated very fast.</p>
+    <p>Back in 2008, that's exactly what happened. Some big banks made some big mistakes, and some of them broke their promises. A lot of people couldn't get any ice cream, and people who had ice cream lost all they had. Many people became very sad, so much so that they started asking some important questions: </p>
+    <ul>
+        <li>How can we restore <strong>trust</strong>?</li>
+        <li>Is there a better way to do the <strong>work</strong> of moving money?</li>
+        <li>How can we make sure <strong>promises</strong> are always kept?</li>
+    </ul>
+    <p>Around that same time, a brilliant computer programmer named <a href="#">Satoshi Nakamoto</a> came up with a solution: don't trust banks, trust <strong>math!</strong></p>
+    <p>Math, Satoshi reasoned, can always be <strong>trusted</strong>. Math never breaks a <strong>promise</strong>. What if we trusted math to do the <strong>work</strong> of making sure our money is real, and moving it from once place to another?</p>
+    <p>And so Satoshi got work programming his computers. Day and night he worked, creating a system that would entrust the security and authenticity of our money not to people who sometimes make mistakes, but to the constant reliability of math.</p>
+    <p>One year later, in 2009, Bitcoin was born!</p>
+    <br>
+        <div class="key-takeaways" style="padding: 15px;"">
+            <table style="width:100%">
+                <tr>
+                    <td><h2>Key Concepts:</h2></td>
+                    <td><img src="https://images.squarespace-cdn.com/content/v1/5a81c513010027e61062992d/1567045093321-1CLANO07FY7Q2MEJ29KN/ke17ZwdGBToddI8pDm48kAXALKN3x-TfMe96UD_RVr5Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHAWVMUrWdBSYPEE2_zN73rcDYWwD3Ut1hbf_pGA02oPakebq3ZfLmgl1fzghfkGkM/bitcoin%2Blogo.jpg" height="50px" width="auto"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                        <li>For money to work, everybody needs to be able to trust it.</li>
+                        <li>Banks are run by people, and people sometimes make mistakes that break trust.</li>
+                        <li>Bitcoin uses math to make sure trust is never broken, so that the money always works!</li>
+                        </ul>
+                  </td>
+                </tr>
+              </table>
+        </div>
+    <br><br>
+    <p>Want to know more about how Bitcoin uses math to make money secure and trustworthy? Click or tap <a href="#">here</a> to continue the story!</p>
+    <br><br>
+    </div>  
+    
+    <div id="advanced" class="frame">
+        <p>In a headline, Bitcoin is a currency. More accurately, Bitcoin is a new chapter in the <em>story</em> of currency.</p> To understand Bitcoin, let's contextualize it by briefly visiting some of the early chapters of that story.</p>
+        <p>Before currency, trading was difficult and cumbersome. Immense time and energy was spent transporting goods great distances, one transaction at a time, negotiating the value of the goods on a per-transaction basis.  Economies ran like molasses; surpluses moved toward deficits at a snail's pace, and growth was extremely limited.</p>
+        <p>To solve these problems, we innovated by creating currency.</p>
+        <p>In the simplest terms, currency can be understood as a technological innovation. As an innovation, it sought to overcome many of the problems experienced in trade. By representing the value of goods in the form of a <em>currency</em>, we could <strong>store the value</strong> of goods and services in lightweight, easily-transportable objects like sea shells, stones, or metal coins. This allowed us to <strong>move value from once place to another</strong> much more quickly, which in turn sped up economies, accelerated growth, and brought prosperity to the world.</p>
+        <p>This was a great achievement, but we'd soon find out that in the course of solving problems, we ended up creating some new ones. For example, the introduction of lightweight and portable currency vastly increased the prospects of thieves. After all, it's much easier to steal a sachel of silver coins than it is a field full of oxen!</p>
+        <p>To solve this new problem, we innovated again by creating banks. At its inception, the bank was a <strong>secure</strong> place to <strong>store value</strong>. We offered the banks our <strong>trust</strong> to keep our money safe, and to facilitate its <strong>movement</strong> from one place to another on our behalf.</p>
+        <p>This worked pretty well for a long time, so much so that we started to <strong>trust</strong> banks implicitly: our deposits were always there for later withdrawal. If we asked the bank to move our money somewhere, we could be certain it would arrive in a timely fashion. In exchange for their services, we'd pay them a fee. By and large, this system worked well for centuries.</p>
+        <p>Then, in 2008, all of that would change.</p>
+        <p>During the 2008 Savings & Loan Crisis and subsequent recession, our <strong>trust</strong> in banks, and in our currency, was shaken to the core. The banks, it was revealed, had mishandled our money to such an extent that our entire economic system fell into peril. Thousands of people lost their life savings, and thousands more lost their homes. It was one of the great economic tragedies of the 21st century, and we are still feeling the effects even to this day.</p>
+        <p>It was this event that would inspire <a href="#">Satoshi Nakamoto</a>, a brilliant cryptographer and computer programmer, to develop the next innovation in money: Bitcoin.</p>
+        <p>So, how does Bitcoin solve these problems?</p>
+        <p>In the simplest possible terms, Bitcoin <strong>establishes trust</strong> by relying upon the infallability of mathematics to govern the ownership and movement of money. </p>
+        <p>Bitcoin is currency that aims to do away with all the problems that come with trusting institutions to handle the storage and movement of money. Instead of trusting institutions, which are run by human beings with all their human failings, Bitcoin makes it possible to trust a distributed network of computers to keep track of the money supply. Instead of being accountable to governments and regulators, who are themselves fallible, Bitcoin is accountable to the immutable laws of mathematics.</p>
+        <br><br>
+        <div class="key-takeaways" style="padding: 15px;">
+            <table style="width:100%">
+                <tr>
+                    <td><h2>Key Concepts:</h2></td>
+                    <td><img src="https://images.squarespace-cdn.com/content/v1/5a81c513010027e61062992d/1567045093321-1CLANO07FY7Q2MEJ29KN/ke17ZwdGBToddI8pDm48kAXALKN3x-TfMe96UD_RVr5Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHAWVMUrWdBSYPEE2_zN73rcDYWwD3Ut1hbf_pGA02oPakebq3ZfLmgl1fzghfkGkM/bitcoin%2Blogo.jpg" height="50px" width="auto"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                        <li>Bitcoin is a new chapter in the storied history of money.</li>
+                        <li>Like all technological innovations, Bitcoin aims to solve problems.</li>
+                        <li>Bitcoin uses a distributed network of computers to move control of our money away from fallible institutions and toward the immutable laws of mathematics.</li>
+                        </ul>
+                  </td>
+                </tr>
+            </table>
+         </div>
+         <br><br>
+            <p>Want to know more about how Bitcoin uses math to make money secure and trustworthy? Click or tap <a href="#">here</a> to continue the story!</p>
+         <br><br>
+        </div>  
+        <center><a href="http://www.shamory.com"><img src="https://i0.wp.com/shamory.com/wp-content/uploads/2019/12/SHAmory-Large-ff6666.png?fit=1020%2C198&ssl=1" height="75px" width="auto"></a></center>
+        <br><br>
+</HTML>
